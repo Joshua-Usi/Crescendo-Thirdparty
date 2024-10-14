@@ -1,5 +1,7 @@
 @echo off
 
+echo Setting up libraries...
+
 :: Setup glslang libs
 if not exist glslang\libs\Release mkdir glslang\libs\Release
 if not exist glslang\libs\Debug mkdir glslang\libs\Debug
