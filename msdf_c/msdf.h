@@ -806,6 +806,7 @@ double msdf_shoelace(const msdf_Vec2 a, const msdf_Vec2 b)
 
 
 void* msdf__alloc(size_t size, void* ctx) {
+    // fuck it, hacky +8 to stop heap corruptions
     return malloc(size + 8);
 }
 void msdf__free(void* ptr, void* ctx) {
